@@ -1,0 +1,122 @@
+/* Main CSS */
+
+header
+{
+    font-size: 3rem;
+    text-align: center;
+    
+}
+
+body
+{
+    display: grid;
+    grid-template: repeat(3, auto) 1fr / 1fr auto;
+    font-size: 3rem;
+}
+
+footer
+{
+    background-color: lightgoldenrodyellow;
+    grid-column: 1 / 3;
+    padding: 10px;
+}
+
+a 
+{
+    text-decoration: none;
+}
+
+a:hover, a:focus
+{
+    color: gray;
+}
+
+a:active
+{
+    color: black;
+}
+
+a:visited
+{
+    color: white;
+}
+
+
+/* Classes */
+
+.main-logo
+{
+     width:50%;
+     height: auto;
+}
+
+
+
+.wizard-hat-logo
+{
+    margin: auto;
+    width: 50px;
+    height: auto;
+}
+
+.video-1
+{
+    border-style: solid;
+    border-color: black;
+    border-width: 5px;
+    width: 75%;
+    height: auto;
+}
+
+.nav-bar-item
+{
+    color: white;
+
+}
+
+/* IDs */
+
+#banner-front, #nav-bar, #video-front
+{
+    grid-column: 1 / 3;
+}
+
+#banner-front
+{
+    background-color:black;
+}
+
+#video-front
+{
+    background-color: lightyellow;
+    display: grid;
+    place-items: center;
+    padding: 15px;
+}
+
+#gallery-front
+{
+    grid-column: 1 / 2;
+    background-color: lightblue;
+    padding: 10px;
+}
+
+#nav-bar
+{
+    display: flex;
+    background: black;
+    justify-content: space-evenly;
+    padding: 10px;
+}
+
+#sidebar-front
+{
+    grid-column: 2 / 3;
+    background-color: lightpink;
+    padding: 10px;
+}
+
+#footer-legal
+{
+    font-size: 1rem;
+}
