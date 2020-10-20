@@ -21,6 +21,8 @@ body
 
 footer
 {
+    display: grid;
+    justify-content: space-around;
     background-color: lightgoldenrodyellow;
     grid-column: 1 / 3;
     padding: 10px;
