@@ -1,40 +1,68 @@
 <!DOCTYPE html>
 
  <html>
-<header id="banner-front">
-    <link href="css/reset.css" rel="stylesheet" type="text/css" media="all">
-    <link href="css/style.css" rel="stylesheet" type="text/css" media="all">
-    <link href="css/fonts.css" rel="stylesheet" type="text/css" media="all">
+    <head>    
+        <link href="css/reset.css" rel="stylesheet" type="text/css" media="all">
+        <link href="css/style.css" rel="stylesheet" type="text/css" media="all">
+        <link href="css/fonts.css" rel="stylesheet" type="text/css" media="all">
     
-    <img src="images/rupe-clarke-logo.png" alt="rupe clarke logo" class="main-logo">
-</header>
+        <script src="https://kit.fontawesome.com/b51f4dfb9a.js" crossorigin="anonymous"></script>
+        <script src="scripts/menu-select.js"></script>
+        
+    </head>
+
 <body>
+    <header id="banner-front">
+        <img src="images/rupe-clarke-logo.png" alt="rupe clarke logo" class="main-logo">
+    </header>
         <ul id="nav-bar">
             <li class="nav-bar-item"><a href="" alt="" class="nav-bar-links">Home</a></li>
             <li class="nav-bar-item"><a href="" alt="" class="nav-bar-links">Gallery</a></li>
             <li class="nav-bar-item"><a href="" alt="" class="nav-bar-links">Bookings</a></li>
             <li class="nav-bar-item"><a href="" alt="" class="nav-bar-links">About</a></li>
         </ul>
-
+    
     <div id="video-front">
-        <video autoplay class="video-1" controls>
+        <video class="video-1" controls>
             <source src="videos/rupe-noir183.MP4" type="video/mp4">
                 Your browser does not support this video tag.
         </video>
     
     </div>
-    <div id="gallery-front">Gallery</div>
-    <div id="sidebar-front">
-        <div>Social1</div>    
-        <div>Social2</div>
-        <div>Social3</div>
-        <div>
-            <form>
-                Form
-            </form>
+    <div id="gallery-front"><h2>Gallery</h2>
+        <div class="g-row">
+            <div class="g-col">
+                <img src="images/rupe1.jpg" alt="alt-txt">
+                <img src="images/rupe2.jpg" alt="alt-txt">
+                <img src="images/rupe3.jpg" alt="alt-txt">
+            </div>
 
+            <div class="g-col">
+                <img src="images/rupe4.jpg" alt="alt-txt">
+                <img src="images/rupe5.jpg" alt="alt-txt">
+                <img src="images/rupe6.jpg" alt="alt-txt">
+            </div>
         </div>
-    
+
+
+
+    </div>
+    <div id="sidebar-front">
+        <div class="sb-ig-icon"><i class="fab fa-instagram"></i></div>    
+        <div class="sb-fb-icon"><i class="fab fa-facebook-square"></i></div>
+        
+        <div id="tattoo-select-form">
+            
+            <label for="tattoo"> Please select tattoo location 
+            </label>
+            <select id="tattoo-select">
+                <option value="">--Make a choice--</option>
+                <option value="arm">Arm</option>
+                <option value="leg">Leg</option>
+                <option value="chest">Chest</option>
+            </select>    
+        </div>
+            <p></p>
     </div>
 </body>
 <footer>
