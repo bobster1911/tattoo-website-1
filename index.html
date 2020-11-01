@@ -7,20 +7,26 @@
         <link href="css/fonts.css" rel="stylesheet" type="text/css" media="all">
     
         <script src="https://kit.fontawesome.com/b51f4dfb9a.js" crossorigin="anonymous"></script>
-        <script src="js/menu-select.js"></script>
+        
     </head>
 
-<body>
-    <header id="banner-front">
+    <div class="logo-banner">
         <img src="images/rupe-clarke-logo.png" alt="rupe clarke logo" class="main-logo">
-    </header>
-        <ul id="nav-bar">
+    </div>
+
+<header id="nav-bar">
+
+        <ul class="nav-menu">
             <li class="nav-bar-item"><a href="" alt="" class="nav-bar-links">Home</a></li>
             <li class="nav-bar-item"><a href="" alt="" class="nav-bar-links">Gallery</a></li>
             <li class="nav-bar-item"><a href="" alt="" class="nav-bar-links">Bookings</a></li>
             <li class="nav-bar-item"><a href="" alt="" class="nav-bar-links">About</a></li>
         </ul>
-    
+
+</header>
+
+<body class="content">
+
     <div id="video-front">
         <video class="video-1" controls>
             <source src="videos/rupe-noir183.MP4" type="video/mp4">
@@ -28,7 +34,15 @@
         </video>
     
     </div>
-    <div id="gallery-front"><h2>Gallery</h2>
+    <div id="gallery-front">
+        <div class="sec-header">
+
+        <img src="images/D4v1d_two-edged_sword-l.png" class="sword-img">
+        <h2>Gallery</h2>
+        <img src="images/D4v1d_two-edged_sword.png" class="sword-img">
+        
+        </div>
+        
         <div class="g-row">
             <div class="g-col">
                 <img src="images/rupe1.jpg" alt="alt-txt">
@@ -60,15 +74,15 @@
                 <option value="chest">Chest</option>
             </select>    
    
-            <p>hello</p>
-        
+            <p></p>
             <script src="js/menu-select.js"></script>
-            
     </div>
+
+    <script src="js/sticky-header.js"></script>
+
+
 </body>
 <footer>
     <span id="footer-legal">© 2020 Website Wizard</span>
-    <br>
-     <img src="images/wizard-hat.png" alt="wizard-hat-logo" class="wizard-hat-logo">
 </footer>
  </html>

@@ -3,7 +3,7 @@ const para = document.querySelector('p');
 
 select.addEventListener('change', setTattoo);
 
-function setTattoo {
+function setTattoo() {
     const choice = select.value;
 
      if (choice === 'arm') {
