@@ -14,10 +14,7 @@ header
 
 body
 {
-    display: grid;
-    grid-template: repeat(3, auto) / 1fr auto;
-    font-size: 2rem;
-    min-width: 400px;
+    
 }
 
 footer
@@ -57,6 +54,7 @@ a:active
 {
      width:50%;
      height: auto;
+     
 }
 
 .wizard-hat-logo
@@ -87,6 +85,13 @@ a:active
     justify-content: center;
     align-items: center;
     margin-top: 10px;
+}
+
+.content {
+    display: grid;
+    grid-template: repeat(3, auto) / 1fr auto;
+    font-size: 2rem;
+    min-width: 400px;
 }
 
 .sword-img {
@@ -124,16 +129,6 @@ a:active
 
 /* IDs */
 
-#banner-front, #nav-bar, #video-front
-{
-    grid-column: 1 / 3;
-}
-
-#banner-front
-{
-    background-color: black;
-}
-
 .logo-banner {
     display: flex;
     background: black;
@@ -156,17 +151,18 @@ a:active
     justify-content: center;
 }
 
-#nav-bar
-{
-    
-}
-
 .nav-menu
 {
+    background: black;
     display: flex;
-    background:black; 
     justify-content: space-evenly;
     padding: 10px 10px 20px 10px;
+    position: relative;
+    font-size: 2rem;
+}
+
+.nav-container {
+    background: black;
 }
 
 .sticky {
@@ -176,7 +172,7 @@ a:active
 }
 
 .sticky + .content {
-    padding-top: 200px;
+    padding-top: 0px;
 }
 
 #sidebar-front
@@ -194,3 +190,8 @@ a:active
     font-size: 1rem;
 }
 
+.theHeader {
+    color: red;
+    font-size: 2rem;
+    text-align: center;
+}
