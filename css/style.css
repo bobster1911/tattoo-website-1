@@ -34,17 +34,17 @@ h2 {
 a 
 {
     text-decoration: none;
-    color: white;
+    color: red;
 }
 
 a:hover
 {
-    color: gray;
+    color: lightgray;
 }
 
 a:active
 {
-    color: gray;
+    color: lightgray;
 }
 
 
@@ -72,11 +72,6 @@ a:active
     border-width: 5px;
     width: 75%;
     height: auto;
-}
-
-.nav-bar-item
-{
-    color: white;
 }
 
 .sec-header {
@@ -118,16 +113,67 @@ a:active
     margin-top: 7.5px;
 }
 
-.sb-ig-icon {
-    font-size: 4rem;
+.img-cont {
+    position: relative;
 }
 
-.sb-fb-icon {
+.ov-img {
+    opacity: 1;
+    transition: 0.5s ease;
+    display: block;
+}
+
+.middle {
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+
+.img-cont:hover .ov-img {
+    opacity: 0.3;
+}
+
+.img-cont:hover .middle {
+    opacity: 1;
+}
+
+.ov-txt {
+    color: black;
+    font-family: 'cinzel_decorativebold';
+    font-size: 5vw;
+}
+
+.sb-ig-icon, .sb-fb-icon {
     font-size: 4rem;
+    padding: 5px;
+}
+
+.sb-ig-icon:hover {
+    color: lightgray;
+}
+
+.sb-fb-icon:hover {
+    color: lightgray;
 }
 
 
 /* IDs */
+
+.nav-bar {
+    background: black;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px;
+    position: relative;
+    font-size: 2rem;
+}
+
+#nav-bar-container {
+    z-index: 1;
+}
+
 
 .logo-banner {
     display: flex;
@@ -172,17 +218,23 @@ a:active
 }
 
 .sticky + .content {
-    padding-top: 0px;
+    padding-top: 120px;
 }
 
 #sidebar-front
 {
     grid-column: 1 / 3;
-    background-color: lightslategray;
+    background-color: white;
     padding: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.btn-container {
+    display: flex;
+    width: 30%;
+    justify-content: center;
 }
 
 #footer-legal
@@ -191,7 +243,43 @@ a:active
 }
 
 .theHeader {
-    color: red;
+    color:black;
     font-size: 2rem;
     text-align: center;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-icon {
+    display: none;
+}
+
+@media screen and (max-width: 600px) {
+    .nav-bar a {
+        display: none;
+    }
+
+    .nav-bar a.nav-icon {
+        display: block;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+
+    .nav-bar.responsive {
+        position: relative;
+        
+    }
+
+    .nav-bar.responsive .icon {
+        position: relative;
+    }
+
+    .nav-bar.responsive a {
+        display: block;
+    }
+    
 }

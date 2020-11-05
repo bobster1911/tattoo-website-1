@@ -5,26 +5,29 @@
         <link href="css/reset.css" rel="stylesheet" type="text/css" media="all">
         <link href="css/style.css" rel="stylesheet" type="text/css" media="all">
         <link href="css/fonts.css" rel="stylesheet" type="text/css" media="all">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     
         <script src="https://kit.fontawesome.com/b51f4dfb9a.js" crossorigin="anonymous"></script>
         
     </head>
 
 <body>
-    <div class="logo-banner">
-        <img src="images/rupe-clarke-logo.png" alt="rupe clarke logo" class="main-logo">
-        
+    <div class="theHeader">
+        <img src="images/D4v1d_two-edged_sword-l.png" class="sword-img">
+        <h2>Rupe Clarke</h2>
+        <img src="images/D4v1d_two-edged_sword.png" class="sword-img">
     </div>
 
-    <div id="nav-bar">
-        <ul class="nav-menu">
-            <li class="nav-bar-item"><a href="" alt="" class="nav-bar-links">Home</a></li>
-            <li class="nav-bar-item"><a href="" alt="" class="nav-bar-links">Gallery</a></li>
-            <li class="nav-bar-item"><a href="" alt="" class="nav-bar-links">Bookings</a></li>
-            <li class="nav-bar-item"><a href="" alt="" class="nav-bar-links">About</a></li>
-        </ul>
+    <div id="nav-bar-container">
+        <div class="nav-bar" id="nav-bar">
+                <a href="javascript:void(0);" class="nav-icon" onclick="responseNav()"><i class="fa fa-bars"></i></a>
+                <a href="#" alt="Home">Home</a>
+                <a href="#" alt="Gallery">Gallery</a>
+                <a href="#" alt="Bookings">Bookings</a>
+                <a href="#" alt="About">About</a>
+        </div>
     </div>
-
     <div class="content">
 
         <div id="video-front">
@@ -45,15 +48,33 @@
             
             <div class="g-row">
                 <div class="g-col">
-                    <img src="images/rupe1.jpg" alt="alt-txt">
-                    <img src="images/rupe2.jpg" alt="alt-txt">
-                    <img src="images/rupe3.jpg" alt="alt-txt">
+                    <div class="img-cont">
+                        <img src="images/surrealism.jpg" alt="alt-txt" class="ov-img">
+                        <div class="middle">
+                            <div class="ov-txt">Surrealism</div>
+                        </div>
+                    </div>
+                    <div class="img-cont">
+                        <img src="images/realism2.jpg" alt="alt-txt" class="ov-img">
+                        <div class="middle">
+                            <div class="ov-txt">Realism</div>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="g-col">
-                    <img src="images/rupe4.jpg" alt="alt-txt">
-                    <img src="images/rupe5.jpg" alt="alt-txt">
-                    <img src="images/rupe6.jpg" alt="alt-txt">
+                    <div class="img-cont">
+                        <img src="images/lettering.jpg" alt="alt-txt" class="ov-img">
+                        <div class="middle">
+                            <div class="ov-txt">Lettering</div>
+                        </div>
+                    </div>
+                    <div class="img-cont">
+                        <img src="images/chicano.jpg" alt="alt-txt" class="ov-img">
+                        <div class="middle">
+                            <div class="ov-txt">Chicano</div>
+                        </div>
+                    </div>
                 </div>
             </div>
 
@@ -61,25 +82,14 @@
 
         </div>
         <div id="sidebar-front">
-            <div class="sb-ig-icon"><i class="fab fa-instagram"></i></div>    
-            <div class="sb-fb-icon"><i class="fab fa-facebook-square"></i></div>
-            
-                
-                <label for="tattoo"> Please select tattoo location 
-                </label>
-                <select id="tattoo-select">
-                    <option value="">--Make a choice--</option>
-                    <option value="arm">Arm</option>
-                    <option value="leg">Leg</option>
-                    <option value="chest">Chest</option>
-                </select>    
-    
-                <p></p>
-                <script src="js/menu-select.js"></script>
+            <div class="btn-container">
+                <div class="sb-ig-icon"><i class="fab fa-instagram"></i></div>    
+                <div class="sb-fb-icon"><i class="fab fa-facebook-square"></i></div>
+            </div>
         </div>
 
         <script src="js/sticky-header.js"></script>
-
+        <script src="js/responsive-nav.js"></script>
     </div>
 </body>
 <footer>
